@@ -17,10 +17,12 @@ $router->get('/', function () use ($router) {
 
     $router->group(['prefix' => 'api'], function() use ($router)
     {
-      $router->post('language','LanguageController@create');
-      $router->put('language/{id}','LanguageController@update');
-      $router->delete('language/{id}','LanguageController@delete');
-      $router->get('language','LanguageController@index');
+        $router->get('', function () use ($router) {
+            return 'Default api route';});
+        $router->post('language','LanguageController@create');
+        $router->put('language/{id}','LanguageController@update');
+        $router->delete('language/{id}','LanguageController@delete');
+        $router->get('language','LanguageController@index');
     });
 
 
