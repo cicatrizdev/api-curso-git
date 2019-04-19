@@ -15,7 +15,7 @@ $router->get('/', function () use ($router) {
     return $router->app->version();
 });
 
-    $router->group(['prefix' => 'api','namespace' => 'App\Http\Controllers'], function($app)
+    $router->group(['prefix' => 'api'], function() use ($router)
     {
       $router->post('language','LanguageController@create');
       $router->put('language/{id}','LanguageController@update');
