@@ -1,3 +1,9 @@
+# API para o Minicurso de GIT
+
+PHP + Lumen
+Deploy no Heroku (link em breve)
+
+
 # Lumen PHP Framework
 
 [![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
