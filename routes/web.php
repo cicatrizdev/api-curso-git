@@ -14,3 +14,14 @@
 $router->get('/', function () use ($router) {
     return $router->app->version();
 });
+
+    $router->group(['prefix' => 'api','namespace' => 'App\Http\Controllers'], function($app)
+    {
+      $router->post('language','LanguageController@create');
+      $router->put('language/{id}','LanguageController@update');
+      $router->delete('language/{id}','LanguageController@delete');
+      $router->get('language','LanguageController@index');
+    });
+
+
+
