@@ -2,7 +2,7 @@
 
 PHP + Lumen
 
-Deploy no Heroku (link em breve)
+Deploy no Heroku: https://api-curso-git.herokuapp.com/api
 
 
 # Lumen PHP Framework
